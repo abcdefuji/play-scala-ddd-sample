@@ -1,0 +1,13 @@
+# admin.Routes
+# This file defines ADMIN application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /							controller.admin.Application.index
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controller.admin.Assets.at(path="/public", file)
+
+# ->  / common.Routes
